@@ -1,0 +1,1336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    font-family: 'Poppins';
+}
+
+header
+{
+    height: 100vh;
+    width: 100vw;
+    /*background-image: url(); a revenir dessus apres et supprimer la couleur*/
+    /*
+    background-color: darksalmon;*/
+    background-size: cover;
+    background: linear-gradient(180deg, #FFFFFF 13.54%, #FFC164 100%);
+}
+.navbar
+{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a
+{
+    color: black;
+}
+.navbar .logo
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-link ul
+{
+    display: flex;
+}
+
+.navbar .nav-link ul li
+{
+    margin: 0 25px;
+}
+.navbar .nav-link ul li.active a
+{
+    color: #ed3c57;
+    font-weight: 600;
+}
+.navbar .menu
+{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+}
+.mobile-menu
+{
+    margin-left: 0;
+}
+
+@media screen and (max-width:900px) 
+{
+    .navbar
+    {
+        padding: 0;
+    }
+    .navbar .logo
+    {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+    .navbar .menu
+    {
+        display: block;
+    }
+    .nav-link
+    {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255,0.20);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%; 
+        transition: all 0.5s ease;
+    }
+    
+    .mobile-menu
+    {
+        margin-left: 0;
+    }
+    .nav-link ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-link ul li
+    {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    /*--------------------------*/
+   
+    
+   /*-----------*/
+
+
+}
+
+@media screen and (max-width:900px)
+{
+    section
+    {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+        margin-left: -2000px;
+        margin-top: -2000px;
+    }
+}
+
+/*--------------------------*/
+
+
+
+
+   .texte
+   {
+    position:absolute;
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    margin-left: 0px;
+    margin-top: 180px; 
+   } 
+
+   section
+   {
+        /* position:relative;
+        width: 200px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+        margin-left: 680px;
+        margin-top: -520px; */
+
+
+        position: absolute;
+        width: 688px;
+        height: 598px;
+        left: 668px;
+        top: 152px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   }
+   .texte0
+   {
+        width: 547px;
+        height: 153px;
+
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.01em;
+
+        color: #000000;
+        /* font-size: 1cm;
+        font-weight: 700;
+        font-family: 'Times New Roman'; */
+   }
+
+   .texte1
+   {
+        position: absolute;
+        width: 501.92px;
+        height: 120px;
+        /*left: 82.19px;*/
+        top: 196px;
+
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.01em;
+
+        color: #383232;
+
+
+   }
+   .block1
+   {
+        position: absolute;
+        border: 1px solid blue;
+        background-color: blue;
+        height: 6cm;
+        width: 6cm;
+        border-radius: 10px 10px 10px 10px;
+        transform: rotate(-45deg);
+        box-shadow: -4px -6px 6px 3px white ;
+        margin-right: 300px;
+
+        z-index: 1;
+
+   }
+   .imgBus
+   {
+        height: 3.5cm;
+        width: 5.9cm;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 5px;
+        padding-right: 5px;
+        margin-top: 10px;
+
+   }
+   .t1
+   {
+        font-size: 0.5cm;
+        font-weight: bold;
+        color: beige;
+   }
+   /*-----------*/
+   .block2
+   {
+        position: absolute;
+        border: 1px rgb(237, 237, 241);
+        background-color: rgb(237, 237, 241);
+        height: 6cm;
+        width: 6cm;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 145px;
+        margin-top: 190px;
+        z-index: 2;
+
+   }
+   .imgTerrain
+   {
+        height: 3.5cm;
+        width: 5.9cm;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 5px;
+        padding-right: 5px;
+        margin-top: 25px;
+   }
+   .t2
+   {
+        font-size: 0.5cm;
+        font-weight: bold;
+        color: gray;
+   }
+
+   /*------*/
+   .block3
+   {
+        position: absolute;
+        border: 1px rgb(88, 88, 145);
+        background-color: rgb(88, 88, 145);
+        height: 6cm;
+        width: 6cm;
+        border-radius: 10px 10px 10px 10px;
+        transform: rotate(20deg);
+        margin-left: 220px;
+        z-index: 3;
+
+   }
+   .imgClass
+   {
+        position: absolute;
+        height: 3.5cm;
+        width: 5.9cm;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 5px;
+        padding-right: 5px;
+        margin-top: 25px;
+        z-index: 4;
+   }
+   .t3
+   {
+        font-size: 0.5cm;
+        font-weight: bold;
+        color: white;
+        margin-top: 160px;
+   }
+
+
+   /*-------------------------------------cadre2 contenent le ABOUT-----------------------------*/
+   
+   .cadre2
+   {
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: 0px;
+        top: 643px;
+        background: #FFFFFF;
+   }
+
+   .cd1
+   {
+        position: absolute;
+        width: 374px;
+        height: 508px;
+        left: 30px;
+        top: 288px;
+        background: #FDE4BF;
+        border-radius: 20px;
+   }
+   .cd2
+   {
+        box-sizing: border-box;
+        position: absolute;
+        width: 442px;
+        height: 506px;
+        left: 86px;
+        top: 208px;
+        background-image: url("/images/imagesBus.jpg");
+        border: 5px solid #FFFFFF;
+        border-radius: 20px;
+   }
+   .cd3
+   {
+        position: absolute;
+        width: 626px;
+        height: 375px;
+        left: 712px;
+        top: 156px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+
+        letter-spacing: 0.01em;
+        color: #000000;
+   }
+
+   .cd4
+   {
+        position: absolute;
+        width: 141px;
+        height: 38px;
+        left: 592px;
+        top: 50px;
+
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.01em;
+        color: #000000;
+   }
+   .cd5
+   {
+        position: absolute;
+        width: 141px;
+        height: 10px;
+        left: 582px;
+        top: 80px;
+        
+        background: conic-gradient(from 164.45deg at 50% 50%, #3E99E3 -195deg, #FF9B06 0.33deg, #FF9900 5.08deg, #EAF7FE 164.96deg, #3E99E3 165deg, #FF9B06 360.33deg);
+        border-radius: 20px;
+   }
+
+   .BouttonVehicule
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 244px;
+    height: 67px;
+    left: 903px;
+    top: 605px;
+    
+    background: #FFC164;
+    border-radius: 10px;
+
+    /*---------------*/
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+
+
+        width: 230px;
+        height: 80px;
+
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        /* identification de la hauteur de box*/
+        letter-spacing: 0.01em;
+
+        color: #FBF8F8;
+
+
+        /* a l'interieur du cadre */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+   }
+
+   .cadre3
+   {
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: -685px;
+        top: 616px;
+
+        background: #FFEFD7;
+        /* box-shadow: 0px 7px 16px 10px rgba(255, 255, 255, 0.25); */
+   }
+   .titreOurService
+   {
+                    /* Group 1 */
+          position: absolute;
+          width: 195px;
+          height: 50px;
+          left: 588px;
+          top: 86px;
+          /* Our Services */
+          position: absolute;
+          width: 195px;
+          height: 50px;
+          left: 588px;
+          top: 86px;
+
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 38px;
+          letter-spacing: 0.01em;
+          color: #000000;
+   }
+
+   /*----------------------------------------------debut du hour services---------------------------------------------
+   -------------------------------------------------------------------------------------------------------------------
+   -------------------------------------------------------------------------------------------------------------*/
+   .service1
+   {
+        position: absolute;
+        width: 328px;
+        height: 513px;
+        left: 53px;
+        top: 194px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 7px 16px 10px rgba(111, 125, 251, 0.28);
+        border-radius: 20px;
+   }
+   .imgservice1
+   {
+        position: absolute;
+        width: 328px;
+        height: 181px;
+        left: 0px;
+        top: 0px;
+
+        background: url("/images/imageclasse.jpg");
+        border-radius: 20px 20px 0px 0px;
+   }
+   .text1
+   {
+        position: absolute;
+        width: 159px;
+        height: 19px;
+        left: 87px;
+        top: 196px;
+
+        font-family: 'Actor';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        color: #FF9900;
+   }
+   .trai1
+   {
+        position: absolute;
+        width: 328px;
+        height: 0px;
+        left: 0px;
+        top: 228px;
+
+        border: 1px solid #000000;
+   }
+   .text2
+   {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+
+        position: absolute;
+        width: 234px;
+        height: 29px;
+        left: 63px;
+        top: 242px;
+        /* Hall of almost all Capacities */
+        width: 214px;
+        height: 19px;
+        font-family: 'Andada Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+   }
+
+   .trai2
+   {
+        position: absolute;
+        width: 332px;
+        height: 0px;
+        left: 0px;
+        top: 300px;
+        border: 1px solid #000000;
+   }
+   .text3
+   {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+        position: absolute;
+        width: 234px;
+        height: 39px;
+        left: 53px;
+        top: 294px;
+        /* Very Clean and Vantililated */
+        width: 214px;
+        height: 19px;
+        font-family: 'Andada Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #000000;
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+   }
+   .trai3
+   {
+        position: absolute;
+        width: 328px;
+        height: 0px;
+        left: 0px;
+        top: 350px;
+        border: 1px solid #000000;
+   }
+   .text4
+   {
+               /* Frame 31 */
+
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 230px;
+          height: 39px;
+          left: 53px;
+          top: 348px;
+          /* High and Ofently Maintain */
+          width: 210px;
+          height: 19px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+
+   }
+   .trai4
+   {
+    position: absolute;
+    width: 328px;
+    height: 0px;
+    left: 0px;
+    top: 400px;
+    border: 1px solid #000000;    
+   }
+   .text5
+   {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+          position: absolute;
+          width: 99px;
+          height: 39px;
+          left: 105px;
+          top: 400px;
+          width: 79px;
+          height: 19px;
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #057ADA;
+          /* Interieur du cadre*/
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .button1
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 228px;
+          height: 70px;
+          left: 100px;
+          top: 460px;
+          /* Button */
+          box-sizing: border-box;
+
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 14px;
+          gap: 10px;
+
+          width: 80px;
+          height: 10px;
+
+          border: 3px solid #FFC164;
+          border-radius: 10px;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          /* Vector */
+          width: 16px;
+          height: 18px;
+
+          background: #fdfdfd;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          /* Button Text */
+          width: 144px;
+          height: 37px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 1000;
+          font-size: 10px;
+          line-height: 1px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FFC164;
+          /* Interne du boutton */
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+   }
+
+   /*-----------------------------------------------service2---------------------------------*/
+
+   .service2
+   {
+           /* VehicleService */
+          /* Auto layout */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 328px;
+          height: 517px;
+          left: 496px;
+          top: 190px;
+
+          background: #FFFFFF;
+          box-shadow: 0px 7px 16px 10px rgba(111, 125, 251, 0.28);
+          border-radius: 20px;
+
+   }
+   .imgservice12
+   {
+          position: absolute;
+          width: 329px;
+          height: 181px;
+          left: 0px;
+          top: 0px;
+          background: url("/images/imagesBus.jpg");
+          border-radius: 20px 20px 0px 0px;
+   }
+   .text12
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 159px;
+          height: 19px;
+          left: 87px;
+          top: 196px;
+          /* School Bus Reservation */
+          width: 162px;
+          height: 19px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FF9900;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .trai12
+   {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: -1px;
+          top: 228px;
+          border: 1px solid #000000;
+   }
+   .text22
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 234px;
+          height: 29px;
+          left: 0px;
+          top: 242px;
+          /* Hall of almost all Capacities */
+
+          width: 214px;
+          height: 19px;
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .trai22
+   {
+          position: absolute;
+          width: 332px;
+          height: 0px;
+          left: 0px;
+          top: 300px;
+          border: 1px solid #000000;
+   }
+   .text32
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+          position: absolute;
+          width: 234px;
+          height: 39px;
+          left: 53px;
+          top: 294px;
+          /* Very Clean and Vantililated */
+          width: 214px;
+          height: 19px;
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .trai32
+   {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: 0px;
+          top: 350px;
+          border: 1px solid #000000;
+   }
+   .text42
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 230px;
+          height: 39px;
+          left: 53px;
+          top: 348px;
+          /* High and Ofently Maintain */
+          width: 210px;
+          height: 19px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .trai42
+   {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: 0px;
+          top: 400px;
+          border: 1px solid #000000;
+   }
+   .text52
+   { /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+          position: absolute;
+          width: 99px;
+          height: 39px;
+          left: 105px;
+          top: 400px;
+          /* read more */
+          width: 79px;
+          height: 19px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 79;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #057ADA;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+   }
+   .button12
+   {
+          /* Auto layout */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 10px;
+          gap: 10px;
+
+          position: absolute;
+          width: 228px;
+          height: 70px;
+          left: 100px;
+          top: 460px;
+          /* Button */
+
+          box-sizing: border-box;
+
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 14px;
+          gap: 10px;
+          width: 208px;
+          height: 50px;
+          border: 3px solid #FFC164;
+          border-radius: 10px;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          /* Vector */
+
+          width: 16px;
+          height: 18px;
+
+          background: #fcfbfa;
+
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          /* Button Text */
+          width: 144px;
+          height: 37px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 1000;
+          font-size: 10px;
+          line-height: 1px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FF9900;
+          /* Inside auto layout */
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+   }
+
+   /*-------------------------------------------service3-------------------------------------------------------------
+   ------------------------------------------------------------------------------------------------------------------
+   -----------------------------------------------------------------------------------------------------------------*/
+   .service3
+   {
+           /* VehicleService */
+          position: absolute;
+          width: 328px;
+          height: 517px;
+          left: 939px;
+          top: 190px;
+          /* Rectangle 20 */
+          position: absolute;
+          width: 328px;
+          height: 517px;
+          left: 939px;
+          top: 190px;
+          background: #FFFFFF;
+          box-shadow: 0px 7px 16px 10px rgba(111, 125, 251, 0.28);
+          border-radius: 20px;
+   }
+   .imgservice13
+   {
+          /* Rectangle 23 */
+          position: absolute;
+          width: 328px;
+          height: 181px;
+          left: 0px;
+          top: 0px;
+          background: url("/images/imageTerrain.jpg");
+          border-radius: 20px 20px 0px 0px;
+   }
+   .text13
+   {
+          /* Sporting and Open Space Reservation */
+          position: absolute;
+          width: 159px;
+          height: 19px;
+          left: 87px;
+          top: 196px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #FF9900;
+   }
+   .trai13
+   {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: 0px;
+          top: 228px;
+          border: 1px solid #000000;
+   }
+   .text23
+    {
+          position: absolute;
+          width: 214px;
+          height: 19px;
+          left: 63px;
+          top: 242px;
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+    .trai23
+    {
+          position: absolute;
+          width: 332px;
+          height: 0px;
+          left: 0px;
+          top: 280px;
+          border: 1px solid #000000;
+    }
+    .text33
+    {
+          position: absolute;
+          width: 214px;
+          height: 19px;
+          left: 53px;
+          top: 294px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+    .trai33
+    {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: 0px;
+          top: 350px;
+          border: 1px solid #000000;
+    }
+    .text43
+    {
+          position: absolute;
+          width: 230px;
+          height: 39px;
+          left: 53px;
+          top: 348px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+    .trai43
+    {
+          position: absolute;
+          width: 328px;
+          height: 0px;
+          left: 0px;
+          top: 400px;
+          border: 1px solid #000000;
+    }
+    .text53
+    {
+          position: absolute;
+          width: 79px;
+          height: 19px;
+          left: 105px;
+          top: 400px;
+
+          font-family: 'Andada Pro';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #057ADA;
+    }
+    .button13
+    {
+          box-sizing: border-box;
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 14px;
+          gap: 10px;
+
+          position: absolute;
+          width: 208px;
+          height: 50px;
+          left: 100px;
+          top: 460px;
+          border: 3px solid #FFC164;
+          border-radius: 10px;
+          /* Vector */
+          width: 16px;
+          height: 18px;
+          background: #fdfdfb;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          /* Button Text */
+
+          width: 144px;
+          height: 37px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 1000;
+          font-size: 10px;
+          line-height: 1px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+
+          color: #FF9900;
+          /* Inside auto layout */
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+    }
+    
+    /*--------------------------------------------Debut du code css du 4eme cadre de l'app  de la presentation des 
+    ---------------------------------------------develloppeurs---------------------------------------*/
+    .cadre4
+    {
+          /* position: absolute;
+          width: 1370px;
+          height: 918px;
+          left: 0px;
+          top: 2322px;
+          background: #FFFFFF; */
+
+          /*position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: -685px;
+        top: 616px;
+
+        background: #FFEFD7;*/
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+        left: -685px;
+        top: 1382px;
+        background: #FFFFFF;
+    }
+    .titlecadre4
+    {
+                    /* What our Clients Say About Us */
+          position: absolute;
+          width: 438px;
+          height: 37px;
+          left: 463px;
+          top: 146px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 37px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+    .soulignecadre4
+    {
+          position: absolute;
+          width: 224px;
+          height: 5px;
+          left: 590px;
+          top: 190px;
+          /* Rectangle 18 */
+          background: conic-gradient(from 164.45deg at 50% 50%, #3E99E3 -195deg, #FF9B06 0.33deg, #FF9900 5.08deg, #EAF7FE 164.96deg, #3E99E3 165deg, #FF9B06 360.33deg);
+    }
+    .Dev1
+    {
+          position: absolute;
+          width: 357px;
+          height: 346px;
+          left: 15px;
+          top: 364px;
+          /* Rectangle 29 */
+          position: absolute;
+          width: 357px;
+          height: 276px;
+          left: 15px;
+          top: 434px;
+
+          background: #FFFFFF;
+          /* Till now, it has not be easy for me to rent any football field for my events. But i think These guys are the best */
+
+          position: absolute;
+          width: 314.09px;
+          height: 100px;
+          left: 38.17px;
+          top: 562px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+          /* Abikum Atums */
+
+          position: absolute;
+          width: 174px;
+          height: 28px;
+          left: 100px;
+          top: 502px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+          /* Ellipse 1 */
+          position: absolute;
+          width: 119px;
+          height: 122px;
+          left: 128px;
+          top: 364px;
+          background: url(me.jpg);
+
+    }
