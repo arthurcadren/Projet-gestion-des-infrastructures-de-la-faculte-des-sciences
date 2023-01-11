@@ -118,6 +118,60 @@
         <p class="titlecadre4">What our Clients Say About Us</p>
         <span class="soulignecadre4"></span>
         <span class="Dev1"></span>
+        <p class="nomDev1">Arthur cadren</p>
+        <p class="textDev1">Till now, it has not be easy for me to rent any football field for my events. But i think These guys are the best</p>
+    
+        <span class="Dev2"></span>
+        <p class="nomDev2">Arthur cadren</p>
+        <p class="textDev2">Till now, it has not be easy for me to rent any football field for my events. But i think These guys are the best</p>
+
+        <span class="Dev3"></span>
+        <p class="nomDev3">Arthur cadren</p>
+        <p class="textDev3">Till now, it has not be easy for me to rent any football field for my events. But i think These guys are the best</p>
+    </section>
+
+    <section class="partner">
+
+        <span class="principal1">
+            <span class="imgfemme"></span>
+            <span class="Pcadre"></span>
+            <span class="polygone1"></span>
+            <span class="polygone2"></span>
+        </span>
+    
+
+        <span class="titlepartner">Want to Partner With Us</span>
+        <span class="soulpartner"></span>
+        <span class="textpartner">Get in touch with so together,
+        we can provide better services.
+        </span>
+        <input type="button" value="Get in touch" class="buttonpartner">
+    </section>
+
+    <section class="derniercadre">
+        <span class="dertext1">Sign Up For Our News Letter</span>
+        <span class="dertext2">Get to know update about free resources, and don’t miss the chance to secure yours. </span>
+        <span class="dertext3">Your Email</span>
+        <input type="text" name="" class="dertext" placeholder="example@gmail.com">
+        <input type="button" value="subscribe" class="derbut">
+
+        <span class="dertext4">Your best online reservation 
+                                system. Stay in touch we can provide better services</span>
+        <span class="dertext5">Quick Links</span>
+        <span class="dertext6">Services</span>
+        <span class="dertext7">Quick Links</span>
+        <span class="dertext8">Home</span>
+        <span class="dertext9">Classroom Reservation</span>
+        <span class="dertext10">Facebook</span>
+        <span class="dertext11">About</span>
+        <span class="dertext12">vehicle Reservation</span>
+        <span class="dertext13">Twitter</span>
+        <span class="dertext14">Services</span>
+        <span class="dertext15">sport FieldsReservation</span>
+        <span class="dertext16">Whatsapp</span>
+        <span class="dertext17">CampusResource 2023 C .ink, all right reserved</span>
+
+
     </section>
 
 </body>

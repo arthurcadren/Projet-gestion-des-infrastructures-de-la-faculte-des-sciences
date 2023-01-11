@@ -587,10 +587,7 @@ header
         margin: 25px 0;
         font-size: 1.2em;
     }
-
     /*--------------------------*/
-   
-    
    /*-----------*/
     section
     {
@@ -602,15 +599,8 @@ header
         margin-left: -2000px;
         margin-top: -2000px;
     }
-
-
 }
-
 /*--------------------------*/
-
-
-
-
    .texte
    {
     position:absolute;
@@ -624,15 +614,6 @@ header
 
    section
    {
-        /* position:relative;
-        width: 200px;
-        height: 100px;
-        top: 50px;
-        left: 50px;
-        margin-left: 680px;
-        margin-top: -520px; */
-
-
         position: absolute;
         width: 688px;
         height: 598px;
@@ -651,7 +632,6 @@ header
         font-size: 64px;
         line-height: 74px;
         letter-spacing: 0.01em;
-
         color: #000000;
         /* font-size: 1cm;
         font-weight: 700;
@@ -672,10 +652,7 @@ header
         font-size: 32px;
         line-height: 40px;
         letter-spacing: 0.01em;
-
         color: #383232;
-
-
    }
    .block1
    {
@@ -737,7 +714,6 @@ header
         font-weight: bold;
         color: gray;
    }
-
    /*------*/
    .block3
    {
@@ -1620,20 +1596,6 @@ header
     ---------------------------------------------develloppeurs---------------------------------------*/
     .cadre4
     {
-          /* position: absolute;
-          width: 1370px;
-          height: 918px;
-          left: 0px;
-          top: 2322px;
-          background: #FFFFFF; */
-
-          /*position: absolute;
-        width: 1366px;
-        height: 768px;
-        left: -685px;
-        top: 616px;
-
-        background: #FFEFD7;*/
         position: absolute;
         width: 1366px;
         height: 768px;
@@ -1661,7 +1623,6 @@ header
     }
     .soulignecadre4
     {
-                    /* Frame 27 */
           position: absolute;
           width: 224px;
           height: 5px;
@@ -1669,5 +1630,591 @@ header
           top: 190px;
           /* Rectangle 18 */
           background: conic-gradient(from 164.45deg at 50% 50%, #3E99E3 -195deg, #FF9B06 0.33deg, #FF9900 5.08deg, #EAF7FE 164.96deg, #3E99E3 165deg, #FF9B06 360.33deg);
-          
+    }
+    .Dev1
+    {
+          position: absolute;
+          width: 119px;
+          height: 122px;
+          left: 128px;
+          top: 364px;
+          background: url('/images/imageclasse.jpg');
+          border-radius: 100px 100px 100px 100px;
+    }
+    .nomDev1
+    {
+                    /* Abikum Atums */
+          position: absolute;
+          width: 174px;
+          height: 28px;
+          left: 85px;
+          top: 491px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+    .textDev1
+    {
+                    /* Till now, it has not be easy for me to rent any football field for my events. But i think These guys are the best */
+          position: absolute;
+          width: 314.09px;
+          height: 100px;
+          left: 15px;
+          top: 550px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+
+    .dev2
+    {
+          position: absolute;
+          width: 130.37px;
+          height: 134px;
+          left: 577.7px;
+          top: 364px;
+          background: url('/images/imagesBus.jpg');
+          border-radius: 100px 100px 100px 100px;
+    }
+    .nomDev2
+    {
+          position: absolute;
+          width: 166px;
+          height: 28px;
+          left: 566px;
+          top: 491px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+    .textDev2
+    {   
+          position: absolute;
+          width: 345.76px;
+          height: 75px;
+          left: 478.51px; 
+          top: 545px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+
+    .Dev3
+    {
+          position: absolute;
+          width: 119px;
+          height: 121px;
+          left: 1054px;
+          top: 341px;
+          background: url('/images/classeclasse.jpg');
+          border-radius: 100px 100px 100px 100px;
+    }
+    .nomDev3
+    {
+          position: absolute;
+          width: 166px;
+          height: 28px;
+          left: 566px;
+          top: 491px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+    .textDev3
+    {
+          position: absolute;
+          width: 314.09px;
+          height: 100px;
+          left: 964.17px;
+          top: 539px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+
+    /*-------------------------debut du cadre 5------------*/
+
+    .partner
+    {
+          position: absolute;
+          width: 1370px;
+          height: 720px;
+          left: -685px;
+          top: 2150px;
+          background: #FFEFD7;
+    }
+    .titlepartner
+    {
+          position: absolute;
+          width: 324px;
+          height: 35px;
+          left: 787px;
+          top: 238px;
+
+          font-family: 'Abhaya Libre SemiBold';
+          font-style: normal;
+          font-weight: 598;
+          font-size: 32px;
+          line-height: 38px;
+          /* identical to box height */
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #000000;
+    }
+    .soulpartner
+    {
+          position: absolute;
+          width: 148px;
+          height: 6px;
+          left: 787px;
+          top: 276px;
+          background: conic-gradient(from 164.45deg at 50% 50%, #3E99E3 -195deg, #FF9B06 0.33deg, #FF9900 5.08deg, #EAF7FE 164.96deg, #3E99E3 165deg, #FF9B06 360.33deg);
+          border-radius: 20px;
+    }
+    .textpartner
+    {
+          position: absolute;
+          width: 478px;
+          height: 76px;
+          left: 789px;
+          top: 356px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          letter-spacing: 0.01em;
+
+          color: #000000;
+    }
+    .buttonpartner
+    {
+          /* Auto layout */
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 14px;
+          gap: 10px;
+
+          position: absolute;
+          left: 789px;
+          top: 488px;
+
+          background: #FF9900;
+          border-radius: 10px;
+          /* Vector */
+          border: 2px solid #F7F7F7;
+          /* Inside auto layout */
+          /* Button Text */
+          width: 173px;
+          height: 67px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 27px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FBF8F8;
+          /* Inside auto layout */
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+    }
+    .principal1
+    {
+          position: absolute;
+          width: 596.13px;
+          height: 624px;
+          left: 42px;
+          top: 53px;
+          background-color: #000000;
+    }
+    .imgfemme
+    {
+          position: absolute;
+          width: 477.85px;
+          height: 541.24px;
+          left: 130.66px;
+          top: 25px;
+          background: url('/images/imageclasse.jpg');
+    }
+    .pcadre
+    {
+          position: absolute;
+          width: 586.13px;
+          height: 624.83px;
+          left: 52px;
+          top: 52.17px;
+          background-color: #3E99E3;
+    }
+    .polygone2
+    {
+          position: absolute;
+          width: 285.99px;
+          height: 262px;
+          left: 52px;
+          top: 52.17px;
+          background: #FF9900;
+          /* transform: matrix(10, 0, 0, 10, 0, 0); */
+    }
+    .polygone1
+    {
+          position: absolute;
+          width: 586px;
+          height: 224.83px;
+          left: 52px;
+          top: 52.17px;
+          background: #FFC164;
+    }
+
+    .derniercadre
+    {
+          position: absolute;
+          width: 1370px;
+          height: 564px;
+          left: -680px;
+          top: 2870px;
+          background: #FFC164;
+    }
+    .dertext1
+    {
+          position: absolute;
+          width: 442px;
+          height: 39px;
+          left: 76px;
+          top: 80px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 39px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext2
+    {
+          position: absolute;
+          width: 496px;
+          height: 48px;
+          left: 76px;
+          top: 152px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext3
+    {
+          position: absolute;
+          width: 188px;
+          height: 40px;
+          left: 716px;
+          top: 80px;
+
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext
+    {
+          position: absolute;
+          width: 510px;
+          height: 67px;
+          left: 798px;
+          top: 130px;
+          background: #FFFFFF;
+          border-radius: 10px;
+    }
+    .derbut
+    {
+          position: absolute;
+          width: 228px;
+          height: 67px;
+          left: 1080px;
+          top: 130px;
+          background: #FF9900;
+          border-radius: 0px 10px 10px 0px;
+          /*------------------------------------------------*/
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext4
+    {
+          position: absolute;
+          width: 400px;
+          height: 77px;
+          left: 76px;
+          top: 384px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext5
+    {
+          position: absolute;
+          width: 130px;
+          height: 28px;
+          left: 578px;
+          top: 325px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext6
+    {
+          position: absolute;
+          width: 86px;
+          height: 28px;
+          left: 914px;
+          top: 329px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext7
+    {
+          position: absolute;
+          width: 130px;
+          height: 28px;
+          left: 1186px;
+          top: 331px;
+          font-family: 'Times New Roman';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          /* identical to box height */
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext8
+    {
+          position: absolute;
+          width: 42px;
+          height: 19px;
+          left: 601px;
+          top: 376px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext9
+    {
+          position: absolute;
+          width: 159px;
+          height: 19px;
+          left: 878px;
+          top: 372px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext10
+    {
+          position: absolute;
+          width: 67px;
+          height: 19px;
+          left: 1212px;
+          top: 369px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext11
+    {
+          position: absolute;
+          width: 43px;
+          height: 19px;
+          left: 600px;
+          top: 407px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext12
+    {
+          position: absolute;
+          width: 142px;
+          height: 19px;
+          left: 878px;
+          top: 404px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext13
+    {
+          position: absolute;
+          width: 50px;
+          height: 19px;
+          left: 1212px;
+          top: 402px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext14
+    {
+          position: absolute;
+          width: 56px;
+          height: 19px;
+          left: 600px;
+          top: 438px;
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext15
+    {
+          position: absolute;
+          width: 170px;
+          height: 19px;
+          left: 878px;
+          top: 438px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+
+          color: #FFFFFF;
+    }
+    .dertext16
+    {
+          position: absolute;
+          width: 71px;
+          height: 19px;
+          left: 1212px;
+          top: 435px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 0.01em;
+          color: #FFFFFF;
+    }
+    .dertext17
+    {
+          position: absolute;
+          width: 440px;
+          height: 26px;
+          left: 488px;
+          top: 500px;
+
+          font-family: 'Actor';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 26px;
+          letter-spacing: 0.01em;
+
+          color: #FFFFFF;
     }
