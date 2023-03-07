@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateSallesTable extends Migration
 {
@@ -15,11 +16,11 @@ class CreateSallesTable extends Migration
     {
         Schema::create('salles', function (Blueprint $table) {
             //$table->id();
-            $table->timestamps();
             $table->string('nomSalle')->primary();
             $table->integer('capacite');
             $table->string('emplacement');
-            $table->integer('Nsalle');
+            $table->timestamps();
+            // $table->integer('Nsalle')->increment();
         });
     }
 
@@ -32,4 +33,5 @@ class CreateSallesTable extends Migration
     {
         Schema::dropIfExists('salles');
     }
+
 }

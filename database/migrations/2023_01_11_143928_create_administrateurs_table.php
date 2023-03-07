@@ -20,8 +20,8 @@ class CreateAdministrateursTable extends Migration
             $table->string('nomAdmin');
             $table->string('prenomAdmin');
             
-            // $table->integer('idEnseignant');
-            // $table->foreign('idEnseignant')->references('idEnseignant')->on('enseignants');
+            $table->integer('idEnseignant');
+            $table->foreign('idEnseignant')->references('idEnseignant')->on('enseignants');
         });
     }
 

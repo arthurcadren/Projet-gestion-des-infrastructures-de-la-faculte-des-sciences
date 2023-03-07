@@ -20,8 +20,6 @@ class CreateEnseignantsTable extends Migration
             $table->string('nomEnseignant');
             $table->string('prenomEnseignant');
             $table->string('grade');
-
-            
         });
     }
 

@@ -19,8 +19,8 @@ class CreateDepartementsTable extends Migration
             $table->string('nomDepartement')->primary();
             $table->integer('Ndepartement');
 
-            // $table->string('nomSalle');
-            // $table->foreign('nomSalle')->references('nomSalle')->on('salles');
+            $table->string('nomSalle');
+            $table->foreign('nomSalle')->references('nomSalle')->on('salles');
         });
     }
 

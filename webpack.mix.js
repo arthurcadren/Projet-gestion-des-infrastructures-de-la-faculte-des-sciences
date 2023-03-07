@@ -1,3 +1,4 @@
+const { postCss } = require('laravel-mix');
 const mix = require('laravel-mix');
 
 /*
@@ -13,6 +14,10 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .vue()
+    .postCss('resources/css/app1.css','public/css')
+    .postCss('resources/css/app2.css','public/css')
+    .postCss('resources/css/app3.css','public/css')
+    .postCss('resources/css/styletableau.css','public/css')
     .postCss('resources/css/app.css', 'public/css', [
         require('tailwindcss'),
         //

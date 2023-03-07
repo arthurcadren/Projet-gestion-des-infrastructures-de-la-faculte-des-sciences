@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVehiculesTable extends Migration
+class CreateReservTerrainsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,14 @@ class CreateVehiculesTable extends Migration
      */
     public function up()
     {
-        Schema::create('vehicules', function (Blueprint $table) {
+        Schema::create('reserv_terrains', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('terrain_id')->constrained()->onDelete('cascade');
+            $table->date('jour');
+            $table->date('jourdeprise');
+            $table->time('debut');
+            $table->time('fin');
+            $table->string('motif');
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ class CreateVehiculesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('vehicules');
+        Schema::dropIfExists('reserv_terrains');
     }
 }

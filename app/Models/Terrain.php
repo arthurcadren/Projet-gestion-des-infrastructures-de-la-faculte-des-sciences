@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Terrain extends Model
 {
+    protected $fillable=['id','type','dimension','emplacement','phototerrain'];
     use HasFactory;
 }

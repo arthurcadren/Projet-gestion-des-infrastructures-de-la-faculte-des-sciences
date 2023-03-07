@@ -15,6 +15,10 @@ class CreateTerrainsTable extends Migration
     {
         Schema::create('terrains', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
+            $table->string('dimension');
+            $table->string('emplacement');
+            $table->string('phototerrain');
             $table->timestamps();
         });
     }

@@ -45,10 +45,13 @@
             <img src="images/imageTerrain.jpg" title="class" class="imgTerrain">
             <p class="t2">Sport Space <br>Reservation</p>
         </aside>
-        <aside class="block3">
-            <img src="images/imageclasse.jpg" title="class" class="imgClass">
-            <p class="t3">class Room <br>Reservation</p>
-        </aside>
+        <a href="page2#page2">
+            <aside class="block3">
+                <img src="images/imageclasse.jpg" title="class" class="imgClass">
+                <p class="t3">class Room <br>Reservation</p>
+            </aside>
+        </a>
+        
              
     </section>
 

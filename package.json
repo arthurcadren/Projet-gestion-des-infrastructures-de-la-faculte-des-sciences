@@ -18,6 +18,11 @@
         "vue-loader": "^16.8.3"
     },
     "dependencies": {
+        "bootstrap": "^5.2.3",
+        "sass": "^1.57.1",
+        "sass-loader": "^13.2.0",
+        "sweetalert": "^2.1.2",
+        "sweetalert2": "^11.4.8",
         "vue": "3.2.26"
     }
 }

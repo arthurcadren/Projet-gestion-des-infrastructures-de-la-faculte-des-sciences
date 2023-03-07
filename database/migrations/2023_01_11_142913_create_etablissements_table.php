@@ -23,7 +23,7 @@ class CreateEtablissementsTable extends Migration
             $table->foreign('nomDepartement')->references('nomDepartement')->on('departements');
 
             $table->string('nomSalle');
-            $table->foreign('nomSalle')->references('nomSalle')->on('salles');
+            $table->foreign('nomSalle')->references('nomSalle')->on('salles')->onDelete('cascade');
         });
     }
 
