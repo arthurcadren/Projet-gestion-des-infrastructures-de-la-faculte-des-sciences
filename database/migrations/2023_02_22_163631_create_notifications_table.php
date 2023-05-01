@@ -18,7 +18,7 @@ class CreateNotificationsTable extends Migration
             /*$table->integer('id_reservation');
             $table->foreign('id_reservation')->references('id_reservation')->on('reser_vehicules');
             */
-            $table->foreignId('reser_vehicule_id')->constrained()->onDelete('cascade');
+            $table->foreignId('reser_vehicule_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->string('type_notification');
             $table->timestamps();
         });

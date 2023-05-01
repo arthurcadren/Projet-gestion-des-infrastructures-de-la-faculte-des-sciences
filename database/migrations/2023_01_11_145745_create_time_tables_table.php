@@ -20,13 +20,13 @@ class CreateTimeTablesTable extends Migration
             //$table->integer('idEmploie')->primary()->autoincrment();
             $table->enum('evenement',['Cour','CC','SN','TP','TD','Vide','Administratif','Soutenance']);/*------------------------ */
             $table->string('nomevent');/*--------------------------*/
-            $table->enum('filiere',['ICT4D','Informatique','Mathematique','Physique']);/*----------------------------*/
-            $table->enum('niveau',['L1','L2','L3','M1','M2','D1','D2','Administratif']);/*----------------------------*/
+            $table->enum('filiere',['ICT4D','Informatique','Mathematique','Physique','Aucune']);/*----------------------------*/
+            $table->enum('niveau',['L1','L2','L3','M1','M2','D1','D2','Administratif','Aucun']);/*----------------------------*/
             $table->enum('Date',['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi']);/*----------------------------*/
             $table->time('tempsdebut');/*----------------------------*/
             $table->time('tempsfin');/*----------------------------*/
             $table->string('nomSalle');
-            $table->foreign('nomSalle')->references('nomSalle')->on('salles')->onDelete('cascade');
+            $table->foreign('nomSalle')->references('nomSalle')->on('salles')->onDelete('cascade')->onUpdate('cascade');
             /*-------------------------------------*/
             //  $table->integer('idAdmin');
             //  $table->foreign('idAdmin')->references('idAdmin')->on('administrateurs')->null();

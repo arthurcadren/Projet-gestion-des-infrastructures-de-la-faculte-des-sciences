@@ -12,9 +12,9 @@ class Salle extends Model
 {
     use HasFactory;
      //public $timestamps=false;
-    //protected $fillable=['nomSalle','capacite','emplacement'];
+     //protected $fillable=['nomSalle','capacite','emplacement'];
 
-        protected $guarded=['nomSalle','capacite','emplacement'];
+     protected $guarded=['nomSalle','capacite','emplacement'];
 
      public function time_tables()
      {

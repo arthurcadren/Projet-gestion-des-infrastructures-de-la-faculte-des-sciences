@@ -10,7 +10,7 @@
 <body>
  <h1 align="center">Salle vide</h1>
     <div class="container">
-        <a href="{{route('page2')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>          
+        <!-- <a href="{{route('page2')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>          -->
         <div class="row">
             @if($message= Session::get('success'))
                 <div class="message">
@@ -39,12 +39,12 @@
                 <td>{{$row->filiere}}</td>
                 <td>{{$row->nomevent}}</td>
                 <td>{{$row->niveau}}</td>
-                <!-- <td>
-                    <!-- <a href="{{route('deleteevent',['nomevent'=>$row->nomevent])}}"><button type="button" class='btn btn-danger'>Delete</button></a>
-                    <a href="{{route('updateevent',['nomevent'=>$row->nomevent])}}"><button type="button" class='btn btn-info'>Edit</button><a> -->
+                 <td>
+                 <!-- <a href="{{route('deleteevent',['Date'=>$row->Date,'nomevent'=>$row->nomevent,'tempsdebut'=>$row->tempsdebut,'tempsfin'=>$row->tempsfin]) }}"><button type="button" class='btn btn-danger'>Delete</button></a>
+                    <a href="{{route('updateevent',['nomevent'=>$row->nomevent])}}"><button type="button" class='btn btn-info'>Edit</button></a> -->
                     <!-- /updateevent/{{$row->nomevent}} -->
-                <!--</td>  -->
-                </tr>
+                 </td>
+            
             @endforeach
             </tbody>
             </table>

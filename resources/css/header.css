@@ -1,0 +1,75 @@
+.navbar
+{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.navbar a
+{
+    color: black;
+}
+/* .navbar .logo
+{
+    font-size: 2em;
+    font-weight: bold;
+} */
+
+.navbar .nav-link ul
+{
+    display: flex;
+    
+}
+
+.navbar .nav-link ul li
+{
+    margin: 0 25px;
+    list-style: none;
+}
+.navbar .nav-link ul li.active a
+{
+    color: #ed3c57;
+    font-weight: 600;
+}
+.navbar .menu
+{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 35px;
+}
+.imgTerrain
+   {
+        height: 50px;
+        width: 200px;
+        margin-left: 5px;
+        padding-right: 5px;
+        margin-top: 5px;
+   }
+   .bookbtn
+   {
+                  
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 13px 23px;
+      border: 1px solid #FF9900;
+      transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+      background: #FF9900;
+      color: #222222;
+      
+   } 
+   .bookbtn:hover {
+      border-color: #FF9900;
+      background: #f7f7f7;
+  }

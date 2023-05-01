@@ -10,14 +10,19 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">CampusResource</a>
+        <a href="#" class="logo">
+        <!-- <img src="images/logo.png" title="class" class="imgTerrain"> -->
+        <img src="images/infralog2.png" title="class" class="imgTerrain">
+        </a>
 
         <div class="nav-link">
             <ul>
                 <li class="active"><a href="#">Home<a><li>
-                <li><a href="#">About<a><li>
-                <li><a href="#">Service<a><li>
+                <li><a href="#cd4">About<a><li>
+                <li><a href="#titreOurService">Service<a><li>
                 <li><a href="#">BookNow<a><li>
+                <li><a href="#"><button class="bookbtn">BookNow<button><a><li>
+                
             </ul>
         </div>
 
@@ -28,23 +33,27 @@
     </header>
     <nav class="texte">
         <p class="texte0">Campus Resource <br>
-                        reservation</p> <br>
+                        reservation
+        </p> <br>
 
     <p class="texte1">Make your events more special <br>
                         and valuable by getting the best <br>
                         resources now!</p>
     </nav>
 
-    <section>
+    <section class="welcomepg-boxes"> 
+        <a href="{{route('auth')}}">
         <aside class="block1">
             <img src="images/imagesBus.jpg" title="vehicule" class="imgBus">
-            <p class="t1">vehicle <br>Reservation</p>
-            
+            <p class="t1">vehicle <br>Reservation</p> 
         </aside>
+        </a>
+        <a href="{{route('auth2')}}">
         <aside class="block2">
             <img src="images/imageTerrain.jpg" title="class" class="imgTerrain">
             <p class="t2">Sport Space <br>Reservation</p>
         </aside>
+        </a>
         <a href="page2#page2">
             <aside class="block3">
                 <img src="images/imageclasse.jpg" title="class" class="imgClass">
@@ -55,25 +64,30 @@
              
     </section>
 
-    <section class="cadre2">
-        <article class="cd1"></article>
-        <article class="cd2">
-            <!-- <img src="images/imagesBus.jpg" class="imagecd2"> -->
-        </article>
-        <article class="cd3">The Faculty Of Science of the University of Yaoundé 
-            has open her doors to whole public, to provide them with the 
-            best resources for any event like conferences, campus
-             advertisement space, sporting space, amongst others. This 
-             reservation system secures your demand, and provides you with
-            a receipt to prove you booked for the resource. You can now therefore join the larger community, that is already enjoying this new offer, offered by the university of Yaoundé 1 and give a new look and taste to your event.</article>
+            <section class="cadre2">
+                <article class="cd1"></article>
+                <article class="cd2">
+                    <!-- <img src="images/imagesBus.jpg" class="imagecd2"> -->
+                </article>
+                <article class="cd3">The Faculty Of Science of the University of Yaoundé 
+                    has open her doors to whole public, to provide them with the 
+                    best resources for any event like conferences, campus
+                    advertisement space, sporting space, amongst others. This 
+                    reservation system secures your demand, and provides you with
+                    a receipt to prove you booked for the resource. You can now therefore join the larger community, that is already enjoying this new offer, offered by the university of Yaoundé 1 and give a new look and taste to your event.</article>
 
-        <article class="cd4">About Us</article>
-        <article class="cd5"></article>
-        <input type="button" value="Reserve Now" class="BouttonVehicule">
-    <section>
+                <article class="cd4" id="cd4">About Us</article>
+                <article class="cd5"></article>
+                <a href="{{route('auth')}}">
+                <button class="BouttonVehicule">BookNow</button>
+                </a>
+                
+                
+            <section>
+
     
     <section class="cadre3">
-        <p class="titreOurService">Our Services</p>
+        <p class="titreOurService" id="titreOurService">Our Services</p>
         <div class="service1">
             <span class="imgservice1"></span>
             <p class="text1">ClassRoom Reservation</p>
@@ -85,7 +99,7 @@
             <p class="text4">High and Ofently Maintain</p>
             <span class="trai4"></span>
             <p class="text5">Read more</p>
-            <input type="button" value="BookNow" class="button1">
+            <button class="button1">BookNow</button>
         </div>
 
         <div class="service2">

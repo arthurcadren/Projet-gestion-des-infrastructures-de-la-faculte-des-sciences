@@ -39,23 +39,23 @@ class TerrainController extends Controller
                 $terrain->phototerrain=$request->file('phototerrain')->getClientOriginalName();
                 $terrain->save();
             }
-            return redirect()->route('RUDterrain')->with('success','Voiture cree avec succe');
+            return redirect()->route('creerTAdmin')->with('success','Terrain cree avec succe');
      }
 
 
      public function UDterrain()
     {
         $data=Terrain::all();
-        return view('RUDterrain',compact('data'));
+        return view('RUDterrain',compact('data'));//RUDterrain
     }
 
-        public function deleteterrain($phototerrain)
+        public function deleteterrain($id)
         {
         // $data=Salle::find($nomSalle);
         // $data->delete();
-        $data=Terrain::where('phototerrain',$phototerrain);
+        $data=Terrain::where('id',$id);
         $data->delete();
-        return redirect()->route('RUDterrain')->with('success','terrain retire avec succes');
+        return redirect()->route('listeTAdmin')->with('success','terrain retire avec succes');
         }
 
         public function updateterrain($phototerrain)
@@ -64,7 +64,7 @@ class TerrainController extends Controller
             // dd($data);
             $data=Terrain::where('phototerrain',$phototerrain)->first();
             //dd($data);
-            return view('uterrain',compact('data'));
+            return view('adminpage/UpdateTerrain',compact('data'));
         }
 
         public function updateterrainvrai(Request $request,$phototerrain)
@@ -114,5 +114,11 @@ class TerrainController extends Controller
             $data=reservTerrain::where('id',$id);
             $data->delete();
             //return redirect()->route('RUDvehicule')->with('success','voiture retire avec succes');
+        }
+
+        public function acceptterrain($id)
+        {
+            $data=reservTerrain::where('id',$id);
+            
         }
 }

@@ -13,11 +13,11 @@
 <div class="container">
         <!-- <a href="{{route('page2')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>          
         <div class="row"> -->
-            <!-- @if($message= Session::get('success'))
+            @if($message= Session::get('success'))
                 <div class="message">
                     {{$message}}
                 </div>
-            @endif -->
+            @endif
             @foreach($data as $row) 
                 <p>N plaque           :{{$row->numero_plaque}}</p>
                 <p>date de reservation:{{$row->date_reservation}}</td>
@@ -26,7 +26,7 @@
                 <br>
                 <p>
                 <a href="{{route('refusereserv',['numplaque'=>$row->numero_plaque])}}"><button type="button" class='btn btn-danger'>Delete</button></a>
-                 
+                <a href="{{route('acceptreserv',['numplaque'=>$row->numero_plaque])}}"><button type="button" class='btn btn-danger'>Accepter</button></a>
                 </p>
 
 

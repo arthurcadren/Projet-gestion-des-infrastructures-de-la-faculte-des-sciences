@@ -15,7 +15,7 @@ class CreateDroitsTable extends Migration
     {
         Schema::create('droits', function (Blueprint $table) {
             $table->id('id_droit');
-            $table->foreignId('utilisateur_id')->constrained()->onDelete('cascade');
+            $table->foreignId('utilisateur_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             /*$table->integer('id_utilisateur');
             $table->foreign('id_utilisateur')->references('id_utilisateur')->on('user_vehicules');*/
             $table->boolean('administrateur');

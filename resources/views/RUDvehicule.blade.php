@@ -10,7 +10,7 @@
 <body>
  <h1 align="center">Liste des vehicules</h1>
 <div class="container">
-<a href="{{route('pageVehicule')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>      
+<a href="{{route('cVAdmin')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>      
         <div class="row">
             @if($message= Session::get('success'))
                 <div class="message">
@@ -20,6 +20,7 @@
                 <table class="content-table">
             <thead>
                 <tr>
+                    <th></th>
                 <th scope="col">marque</th>
                 <th scope="col">modele</th>
                 <th scope="col">annee</th>
@@ -32,9 +33,13 @@
                 </tr>
             </thead>
             <tbody>
-            @foreach($data as $row) 
+            @php
+                    $no=1;
+                @endphp
+            @foreach($data as $index=>$row) 
                 <tr>
                 <!-- <td>{{$row->tempsdebut}} <br>{{$row->tempsfin}}</td> -->
+                <td scope="row">{{$index + $data->firstItem()}}</td>
                 <td>{{$row->marque}}</td>
                 <td>{{$row->modele}}</td>
                 <td>{{$row->annee}}</td>
@@ -54,4 +59,6 @@
             </tbody>
             </table>
 </body>
+{{$data->links()}}
+
 </html>

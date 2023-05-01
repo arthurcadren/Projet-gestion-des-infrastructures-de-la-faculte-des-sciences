@@ -10,7 +10,7 @@
 <body>
  <h1 align="center">Liste des Terrains</h1>
 <div class="container">
-<a href="{{route('pageTerrain')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>      
+<a href="{{route('creerTAdmin')}}"><button type="button" class='btn btn-success'>Ajout +</button></a>
         <div class="row">
             @if($message= Session::get('success'))
                 <div class="message">
@@ -44,7 +44,7 @@
                 </td>
                 <!-- <td>{{$row->niveau}}</td> -->
                 <td>
-                    <a href="{{route('deleteterrain',['phototerrain'=>$row->phototerrain])}}"><button type="button" class='btn btn-danger'>Delete</button></a>
+                    <a href="{{route('deleteterrain',['id'=>$row->id])}}"><button type="button" class='btn btn-danger'>Delete</button></a>
                     <a href="{{route('updateterrain',['phototerrain'=>$row->phototerrain])}}"><button type="button" class='btn btn-info'>Edit</button><a>
                     <!-- /updateevent/{{$row->nomevent}} -->
                 </td>

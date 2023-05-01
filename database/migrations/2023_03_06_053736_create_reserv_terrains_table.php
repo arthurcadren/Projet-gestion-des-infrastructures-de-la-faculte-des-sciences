@@ -15,7 +15,7 @@ class CreateReservTerrainsTable extends Migration
     {
         Schema::create('reserv_terrains', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('terrain_id')->constrained()->onDelete('cascade');
+            $table->foreignId('terrain_id')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->date('jour');
             $table->date('jourdeprise');
             $table->time('debut');

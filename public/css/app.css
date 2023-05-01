@@ -491,6 +491,27 @@ header
     background-size: cover;
     background: linear-gradient(180deg, #FFFFFF 13.54%, #FFC164 100%);
 }
+.bookbtn
+   {
+                  
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 13px 23px;
+      border: 1px solid #FF9900;
+      transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s;
+      background: #FF9900;
+      color: #222222;
+      
+   } 
+   .bookbtn:hover {
+      border-color: #FF9900;
+      background: #f7f7f7;
+  }
 .navbar
 {
     position: absolute;
@@ -500,17 +521,18 @@ header
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    margin-top: -50px;
 }
 
 .navbar a
 {
     color: black;
 }
-.navbar .logo
+/* .navbar .logo
 {
     font-size: 2em;
     font-weight: bold;
-}
+} */
 
 .navbar .nav-link ul
 {
@@ -664,10 +686,13 @@ header
         border-radius: 10px 10px 10px 10px;
         transform: rotate(-45deg);
         box-shadow: -4px -6px 6px 3px white ;
-        margin-right: 300px;
+        margin-right: 400px;
 
         z-index: 1;
 
+   }
+   .welcomepg-boxes{
+      margin-left: 0%;
    }
    .imgBus
    {
@@ -701,13 +726,13 @@ header
    }
    .imgTerrain
    {
-        height: 3.5cm;
-        width: 5.9cm;
-        border-radius: 10px 10px 10px 10px;
+        height: 50px;
+        width: 200px;
         margin-left: 5px;
         padding-right: 5px;
-        margin-top: 25px;
+        margin-top: 5px;
    }
+  
    .t2
    {
         font-size: 0.5cm;
@@ -788,7 +813,7 @@ header
         width: 626px;
         height: 375px;
         left: 712px;
-        top: 156px;
+        top: 176px;
 
         font-family: 'Raleway';
         font-style: normal;
@@ -820,53 +845,38 @@ header
    {
         position: absolute;
         width: 141px;
-        height: 10px;
+        height: 8px;
         left: 582px;
-        top: 80px;
+        top: 85px;
         
-        background: conic-gradient(from 164.45deg at 50% 50%, #3E99E3 -195deg, #FF9B06 0.33deg, #FF9900 5.08deg, #EAF7FE 164.96deg, #3E99E3 165deg, #FF9B06 360.33deg);
+        background: conic-gradient(from 164.45deg at 50% 50%, #fc9608 -195deg, #fc9608 0.33deg, #fc9608 5.08deg, #fc9608 164.96deg, #fc9608 165deg, #fc9608 360.33deg);
         border-radius: 20px;
    }
 
-   .BouttonVehicule
+    .BouttonVehicule
    {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 16px;
-    gap: 10px;
-    
-    position: absolute;
-    left: 903px;
-    top: 605px;
-    
-    background: #FFC164;
-    border-radius: 10px;
-
-    /*---------------*/
-
-
-
-        width: 230px;
-        height: 80px;
-
-        font-family: 'Times New Roman';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 37px;
-        /* identification de la hauteur de box*/
-        letter-spacing: 0.01em;
-
-        color: #FBF8F8;
-
-
-        /* a l'interieur du cadre */
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-   }
+                  
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 13px 23px;
+      border: 1px solid #FF9900;
+      transition: box-shadow 0.2s ease 0s, transform 0.1s ease 0s;
+      background: #FF9900;
+      color: #222222;
+      margin-top: 500px;
+      margin-left: 70%;
+     
+   } 
+   .BouttonVehicule:hover {
+      border-color: #FF9900;
+      background: #f7f7f7;
+  }
+   
 
    .cadre3
    {

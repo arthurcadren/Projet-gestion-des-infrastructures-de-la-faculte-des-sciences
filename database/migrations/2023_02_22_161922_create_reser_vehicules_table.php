@@ -17,14 +17,14 @@ class CreateReserVehiculesTable extends Migration
             $table->id();
             //$table->integer('id_reservation')->primary();
             $table->string('utilisateur_id');
-            $table->foreign('utilisateur_id')->references('matricule')->on('utilisateurs')->constrained()->onDelete('cascade');
+            $table->foreign('utilisateur_id')->references('matricule')->on('utilisateurs')->constrained()->onDelete('cascade')->onUpdate('cascade');
             
 
             /*$table->integer('id_vehicule');
             $table->foreign('id_vehicule')->references('id_vehicule')->on('vehicules')->constrained()->onDelete('cascade');*/
             //$table->foreignId('utilisateur_id')->constrained()->onDelete('cascade');
             $table->string('numero_plaque');
-            $table->foreign('numero_plaque')->references('numero_plaque')->on('vehicules')->constrained()->onDelete('cascade');
+            $table->foreign('numero_plaque')->references('numero_plaque')->on('vehicules')->constrained()->onDelete('cascade')->onUpdate('cascade');
             $table->datetime('date_reservation');
             $table->datetime('date_debut');
             $table->datetime('date_fin');

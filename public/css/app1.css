@@ -146,8 +146,8 @@ flex-grow: 0;
         position: absolute;
         width: 205px;
         height: 77px;
-        left: 55px;
-        top: 181px;
+        left: 350px;
+        top: 410px;
         background: #070917;
         border-radius: 10px;
         /* Button Text */
@@ -372,7 +372,7 @@ flex-grow: 0;
         width: 1368px;
         height: 797px;
         left: 0px;
-        top: 1984px;
+        top: 584px; /*1984px;*/
         /* background: url(bg1.jpg); */
 }
 .titretime
@@ -477,7 +477,7 @@ flex-grow: 0;
         width: 201px;
         height: 77px;
         left: 578px;
-        top: 544px;
+        top: 500px; /*544px*/
         background: #070917;
         border-radius: 10px;
         /* Button Text */
@@ -809,7 +809,7 @@ flex-grow: 0;
         width: 1368px;
         height: 572px;
         left: 0px;
-        top: 3520px;
+        top: 1120px; /*3520px;*/
         /* background: url(bg2.jpg); */
 }
 .titreempty
@@ -1168,7 +1168,7 @@ color: #FFFFFF;
           width: 1368px;
           height: 556px;
           left: 0px;
-          top: 6070px;
+          top: 1700px; /*6070px;*/
           background: #FFC164;
     }
     .dertext1

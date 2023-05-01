@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
+use mail;
 use App\Models\vehicule;
+use App\Models\utilisateur;
 use Illuminate\Http\Request;
 use App\Models\reserVehicule;
 use Illuminate\Support\Carbon;
+
 
 class vehiculeController extends Controller
 {
@@ -21,7 +25,7 @@ class vehiculeController extends Controller
     }
     public function UDvehicule()
     {
-        $data=vehicule::all();
+        $data=vehicule::paginate(5);
         return view('RUDvehicule',compact('data'));
     }
 
@@ -32,24 +36,25 @@ class vehiculeController extends Controller
             // return redirect()->route('test')->with('success','Cette salle existe deja ');
         //}
         //else {
-            $vehi=new vehicule();
-            $vehi->marque = $request->marque;
-            $vehi->modele = $request->modele;
-            $vehi->annee = $request->annee;
-            $vehi->couleur = $request->couleur;
-            $vehi->numero_plaque = $request->num_plaque;
-            //$vehi->photo=$request->hasFile('photo');
-            $vehi->timestamps=$request->timestamps;
-            //$vehi->save();
-            //return redirect()->back()->withSuccess('Enregistrement effectue avec succes !');
-
-            /*$data=vehicule::create($request->all());*/
-            if ($request->hasFile('photo')) {
-                $request->file('photo')->move('photovehicule/',$request->file('photo')->getClientOriginalName());
-                $vehi->photo=$request->file('photo')->getClientOriginalName();
-                $vehi->save();
+            if (Vehicule::where('numero_plaque','=',''.$request->num_plaque.'')->count()>0) {
+                return redirect()->route('cVAdmin')->with('success','Impossible d\'inserer ce vehile car il existe deja');
             }
-            return redirect()->route('RUDvehicule')->with('success','Voiture cree avec succe');
+            else {
+                    $vehi=new vehicule();
+                    $vehi->marque = $request->marque;
+                    $vehi->modele = $request->modele;
+                    $vehi->annee = $request->annee;
+                    $vehi->couleur = $request->couleur;
+                    $vehi->numero_plaque = $request->num_plaque;
+                    $vehi->timestamps=$request->timestamps;
+                    if ($request->hasFile('photo')) {
+                        $request->file('photo')->move('photovehicule/',$request->file('photo')->getClientOriginalName());
+                        $vehi->photo=$request->file('photo')->getClientOriginalName();
+                        $vehi->save();
+                    }
+                    return redirect()->route('cVAdmin')->with('success','Voiture cree avec succe');
+            }
+            
      }
 
         public function updatevoiture($numplaque)
@@ -58,14 +63,14 @@ class vehiculeController extends Controller
             // dd($data);
             $data=vehicule::where('numero_plaque',$numplaque)->first();
             //dd($data);
-            return view('uvehicule',compact('data'));
+            return view('adminpage/UpdateVehicule',compact('data'));//uvehicule
         }
 
         public function updatevoiturevrai(Request $request,$numplaque)
         {
             $data=vehicule::where('numero_plaque',$numplaque)->first();
             $data->update($request->all());
-            return redirect()->route('RUDvehicule')->with('success','mise a jour effectuer avec succes');
+            return redirect()->route('cVAdmin')->with('success','Salle mise a jour effectuer avec succes');
         }
 
         public function deletevoiture($numplaque)
@@ -75,7 +80,7 @@ class vehiculeController extends Controller
         $data=vehicule::where('numero_plaque',$numplaque);
         $data->delete();
 
-        return redirect()->route('RUDvehicule')->with('success','voiture retire avec succes');
+        return redirect()->route('listeVAdmin')->with('success','voiture retire avec succes');
         }
 /*--------------------------fin du CRUD de voiture---------------------------------------------*/
 
@@ -112,13 +117,70 @@ class vehiculeController extends Controller
         
 /*------------------------------accepter ou refuser la reservation du vehicule par l'admin---------------*/
 
+        // Supprime la réservation en utilisant la plaque d'immatriculation
+
         public function refusereserv($numplaque)
         {
-            $data=reserVehicule::where('numero_plaque',$numplaque);
-            $data->delete();
-            //return redirect()->route('RUDvehicule')->with('success','voiture retire avec succes');
+            // Trouve la réservation en utilisant la plaque d'immatriculation
+            $reservation = reserVehicule::where('numero_plaque',$numplaque)->first();
+
+            // Trouve l'utilisateur en utilisant la matricule trouvée dans la réservation
+            $user = utilisateur::where('matricule', $reservation->utilisateur_id)->first();
+
+            if ($user) { // Vérifie si l'objet utilisateur n'est pas nul
+                // Envoie un e-mail à l'utilisateur
+                $to = $user->email;
+                $subject = 'Reservation refusee';
+                $message = 'Votre reservation a ete refusee.';
+                mail($to, $subject, $message);
+                 // Envoie l'email à l'utilisateur
+            } else {
+                // Gère le cas où aucun utilisateur n'est trouvé pour la matricule donnée
+                // ...
+                return redirect()->route('validReservation')->with('success','Connection instable ou erreur du service d\'envoie veuillez verifier votre connexion ou reessayer plutard');
+
+            }
+            $reservation->delete();
+
+             // Supprime la réservation
+            //return redirect()->route('RUDvehicule')->with('success','voiture retirée avec succès');
         }
-        
+
+        public function acceptreserv($numplaque)
+        {
+            // Trouve la réservation en utilisant la plaque d'immatriculation
+            $reservation = reserVehicule::where('numero_plaque',$numplaque)->first();
+
+            // Trouve l'utilisateur en utilisant la matricule trouvée dans la réservation
+            $user = utilisateur::where('matricule', $reservation->utilisateur_id)->first();
+
+            if ($user) { // Vérifie si l'objet utilisateur n'est pas nul
+                // Envoie un e-mail à l'utilisateur
+                $to = $user->email;
+                $subject = 'Réservation Accepte';
+                $message = 'Votre demande de réservation de vehicule a l\'universite de yaounde I a été accepte.';
+                mail($to, $subject, $message); // Envoie l'email à l'utilisateur
+            } else {
+                // Gère le cas où aucun utilisateur n'est trouvé pour la matricule donnée
+                // ...
+                return redirect()->route('validReservation')->with('success','Connection instable ou erreur du service d\'envoie veuillez verifier votre connexion ou reessayer plutard');
+
+            }
+            //return redirect()->route('RUDvehicule')->with('success','voiture retirée avec succès');
+        }
+
+
+
+
+
+        /*---------------------------------------disponibilite-----------------------------------------*/
+
+        public function disponibilite()
+        {
+            $data = vehicule::all();
+            return view('disponibilite',compact('data'));
+        }
+
         
 }
 

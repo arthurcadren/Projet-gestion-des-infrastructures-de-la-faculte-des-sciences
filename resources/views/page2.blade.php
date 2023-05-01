@@ -5,18 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/app1.css')}}">
+    <link rel="stylesheet" href="{{asset('css/header.css')}}">
     <title>Document</title>
 </head>
 <body id="page2">
+    <nav class="navbar">
+        <a href="#" class="logo">
+        <!-- <img src="images/logo.png" title="class" class="imgTerrain"> -->
+         <img src="images/logo.png" title="class" class="imgTerrain">
+        </a>
+
+        <div class="nav-link">
+            <ul>
+                <li class="active"><a href="#">Home<a><li>
+                <li><a href="#cd4">About<a><li>
+                <li><a href="#titreOurService">Service<a><li>
+                <a href="#"><button class="bookbtn">BookNow<button><a>
+            </ul>
+        </div>
+    </nav>
+
+            @if(isset($_COOKIE['notif']))
+                <p>{{ $_COOKIE['notif'] }}</p>
+            @endif
+
+        <!-- @if(Session::has('notif'))
+            <p>{{ Session::get('notif') }}</p>
+        @endif -->
+
     <section class="cadre2">
         <span class="titrecadre2">Time Table and Class Room Management</span>
         <span class="soulcadre2"></span>
-        <span class="cd1">
+        <!-- <span class="cd1">
             <span class="textcd1">If you are a Teacher, you can now propose your  time table, base 
                 on your free time.
             </span>
             <a href=""><input type="submit" value="Propose" class="btcd1"></a>
-        </span>
+        </span> -->
 
         <span class="cd2">
             <span class="textcd2">Student can now consult their timetables for TP,CC, SN, and for normal Courses. 
@@ -36,11 +61,11 @@
             <a href="#emptyclass"><input type="submit" value="Find" class="btcd4"></a>
         </span>
 
-        <span class="cd5">
+        <!-- <span class="cd5">
             <span class="textcd5">Create and update new classrooms and hall in the system.
             </span>
             <a href="#ressalle"><input type="submit" value="Manage" class="btcd5"></a>
-        </span>
+        </span> -->
 
 
     </section>
@@ -58,6 +83,7 @@
         <span class="titretime">Consult Time table of Salle</span>
         <span class="soultime"></span>
             <form action="{{route('show')}}" enctype="multipart/form-data">
+                
                 <select name="input1consult" class="input1consult" required>
                     <option selected>Enter you departement</option>
                     <option value="Informatique">Informatique</option>
@@ -66,10 +92,16 @@
                     <option value="Chimie">Chimie</option>
                     <option value="Administratif">Administratif</option>
                 </select>
-                <input type="text" class="input2consult" name="input2consult" placeholder="Enter salle name" required>
+                <!-- <input type="text" class="input2consult" name="input2consult" placeholder="Enter salle name" required> -->
+
+                <select  class="input2consult" name="input2consult" placeholder="Enter salle name"  required> 
+                        @foreach($salles as $salle)
+                          <option value="{{ $salle->nomSalle }}">{{ $salle->nomSalle }}</option>
+                        @endforeach
+                </select>    
 
                 <select name="input3consult" class="input3consult" required>
-                <option selected>type d'evenement</option>
+                <option selected hidden>type d'evenement</option>
                     <option value="Cour">Cour</option>
                     <option value="CC">CC</option>
                     <option value="SN">SN</option>
@@ -77,7 +109,8 @@
                     <option value="TD">TD</option>
                     <option value="Administratif">Administratif</option>
                 </select>
-                <input type="submit" value="Search" class="boutton4consult">
+                <button type="submit" class="boutton4consult">Search</button>
+                <!-- <input type="submit" value="Search" class="boutton4consult"> -->
             </form>
         
     </section>
@@ -133,7 +166,7 @@
 
 
 
-    <section class="creerEvent" id="creerEvent">
+    <!-- <section class="creerEvent" id="creerEvent">
         <span class="titreEvent">Create Event</span>
         <span class="soulEvent"></span>
 
@@ -170,10 +203,7 @@
                     <option value="Informatique">Informatique</option>
                     <option value="Mathematique">Mathematique</option>
                     <option value="Physique">Physique</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="Aucune">Aucune</option>
 
                 </select>
 
@@ -187,13 +217,14 @@
                     <option value="D1">D1</option>
                     <option value="D2">D2</option>
                     <option value="Administratif">Administatif</option>
+                    <option value="Aucun">Aucun</option>
                 </select>
                
                 <input type="time" name="debut" placeholder="Start Time" class="debutevent" required>
                 <input type="time" name="fin" placeholder="Start Time" class="finevent" required>
                 <input type="submit" value="Create" class="bouttonevent">
             </form>
-    </section>
+    </section> -->
 
 
 
@@ -236,50 +267,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section class="ressalle" id="ressalle">
+    <!-- <section class="ressalle" id="ressalle">
         
         <span class="titresalle">Create and Update New ClassRooms</span>
         <span class="soulsalle"></span>
@@ -299,7 +287,7 @@
             
             <input type="submit" value="Create" class="buttonclass">
         </form>
-    </section>
+    </section> -->
 
 
 
