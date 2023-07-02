@@ -22,6 +22,8 @@
                           <th>Client</th>
                           <th>Service type.</th>
                           <th>Date Reserved</th>
+                          <th>D prise</th>
+                          <th>D remise</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -31,6 +33,8 @@
                           <td>{{$row->utilisateur_id}}</td>
                           <td>Bus Reservation</td>
                           <td>{{$row->date_reservation}}</td>
+                          <td>{{$row->date_debut}}</td>
+                          <td>{{$row->date_fin}}</td>
                           <td><a href="{{route('refusereserv',['numplaque'=>$row->numero_plaque])}}"><label class="badge badge-danger">Reject</label></a></td>
                           <td><a href="{{route('acceptreserv',['numplaque'=>$row->numero_plaque])}}"><label class="badge badge-success">Accept</label></a></td>
                         </tr>
@@ -40,6 +44,8 @@
                           <th>Terrain</th>
                           <th>Service type.</th>
                           <th>Date Reserved</th>
+                          <th>H prise</th>
+                          <th>H remise</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -48,6 +54,8 @@
                           <td>{{$raw->terrain_id}}</td>
                           <td>Terrain Reservation</td>
                           <td>{{$raw->jourdeprise}}</td>
+                          <td>{{$raw->debut}}</td>
+                          <td>{{$raw->fin}}</td>
                           <td><a href="{{route('refuseterrain',['id'=>$row->id])}}"><label class="badge badge-danger">Reject</label></a></td>
                           <td><label class="badge badge-success">Accept</label></td>
                         </tr>

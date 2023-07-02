@@ -96,7 +96,7 @@ class TerrainController extends Controller
             $reservation->save();
            // return redirect()->route('validReservation')->with('success','voiture retire avec succes');
 
-            //return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
+            return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
         }
 
 
@@ -120,5 +120,18 @@ class TerrainController extends Controller
         {
             $data=reservTerrain::where('id',$id);
             
+        }
+
+        
+
+        public function reserveTtest()
+        {
+            $terrains =Terrain::all();
+            return view('ter',compact('terrains'));
+        }
+        public function infoTsingle($phototerrain)
+        {
+            $data=Terrain::where('phototerrain',$phototerrain)->first();
+            return view('ter-single',compact('data'));
         }
 }

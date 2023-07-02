@@ -31,6 +31,7 @@
                             <label for="">Annee:    </label> 
                             <input type="text" value="{{$data->annee}}" name="" id="" selected>
                             
+                            
                     
                   </div>
 

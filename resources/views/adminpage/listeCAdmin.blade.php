@@ -11,7 +11,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card" style="width: 800px;">
                 <div class="card-body ml-2" style="width: 800px;">
-                  <h4 class="card-title">Liste des Salles</h4>
+                  <h4 class="card-title">List of room</h4>
                   <p class="card-description">
                     Queries <code>Received</code>
                   </p> 
@@ -19,8 +19,8 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Nom Salle</th>
-                          <th>Capacite</th>
+                          <th>Room name</th>
+                          <th>Capacity</th>
                           <!-- <th>Emplacement</th> -->
                           <!-- <th>Action</th> -->
                         </tr>

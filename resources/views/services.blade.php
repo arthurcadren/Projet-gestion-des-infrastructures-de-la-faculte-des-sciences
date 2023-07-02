@@ -152,7 +152,7 @@
                            <p class="long_text">A good bus could be the blooming point!  </p>
                         </div>
                      </div>
-                     <div class="see_bt"><a href="{{route('reserveVoiture')}}">Go there</a></div><!-- #busresere-->
+                     <div class="see_bt"><a href="{{route('reserveVtest')}}">Go there</a></div><!-- #busresere-->
                   </div>
                   <div class="box_right">
                      <div class="box_left_main">
@@ -164,7 +164,7 @@
                            <div class="image_2"><img src="images/img-2.png"></div>
                         </div> -->
                      </div>
-                     <div class="see_bt"><a href="{{route('reserveTerrain')}}">Go there</a></div><!-- #sportresere-->
+                     <div class="see_bt"><a href="{{route('reserveTtest')}}">Go there</a></div><!-- #sportresere-->
                   </div>
                </div>
             </div>

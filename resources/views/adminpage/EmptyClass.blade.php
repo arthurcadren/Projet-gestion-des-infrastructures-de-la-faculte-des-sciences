@@ -31,10 +31,10 @@
                           <th>Heure</th>
                           <th>Nom Salle</th>
                           <th>jour</th>
-                          <th>Evenement</th>
-                          <th>filiere</th>
+                          <!-- <th>Evenement</th> -->
+                          <!-- <th>filiere</th>
                           <th>Nom Event</th>
-                          <th>Niveau</th>
+                          <th>Niveau</th> -->
                         </tr>
                       </thead>
                       <tbody>
@@ -43,14 +43,14 @@
                           <td>{{$row->tempsdebut}} <br> {{$row->tempsfin}}</td>
                           <td>{{$row->nomSalle}}</td>
                           <td>{{$row->Date}}</td>
-                          <td>{{$row->evenement}}</td>
-                          <td>{{$row->filiere}}</td>
+                          <!-- <td>{{$row->evenement}}</td> -->
+                          <!-- <td>{{$row->filiere}}</td>
                           <td>{{$row->nomevent}}</td>
-                          <td>{{$row->niveau}}</td>
-
+                          <td>{{$row->niveau}}</td> -->
 
                           <td><a href="{{route('deleteevent',['Date'=>$row->Date,'nomevent'=>$row->nomevent,'tempsdebut'=>$row->tempsdebut,'tempsfin'=>$row->tempsfin]) }}"><label class="badge badge-danger">Delete</label></a></td>
                           <td><a href="{{route('updateevent',['nomevent'=>$row->nomevent])}}"><label class="badge badge-success">Update</label></a></td>
+                          
                         </tr>
                         @endforeach
                         

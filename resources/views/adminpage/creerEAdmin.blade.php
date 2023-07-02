@@ -32,6 +32,7 @@
                           <option value="Jeudi">Jeudi</option>
                           <option value="Vendredi">Vendredi</option>
                           <option value="Samedi">Samedi</option>
+                          <option value="Dimanche">Dimanche</option>
                         </select>
                       </div>
                       <div class="form-group w-50 ml-2">
@@ -68,7 +69,7 @@
                       </div>
                       <div class="form-group w-50 ml-2">
                         <label for="exampleInputConfirmPassword1">Event Name</label>
-                        <input type="text" class="form-control" name="nomevent" id="exampleInputConfirmPassword1" placeholder="Vide">
+                        <input type="text" class="form-control" name="nomevent" id="exampleInputConfirmPassword1" placeholder="Vide" required>
                       </div>
                     </div>
 
@@ -107,11 +108,11 @@
                     <div class="second" style="display: flex;">
                       <div class="form-group w-50">
                         <label for="exampleInputPassword1">Start Time</label>
-                        <input type="time" class="form-control" name="debut" id="exampleInputPassword1" placeholder="7:30">
+                        <input type="time" class="form-control" name="debut" id="exampleInputPassword1" placeholder="7:30" required>
                       </div>
                       <div class="form-group w-50 ml-2">
                         <label for="exampleInputConfirmPassword1">End Time </label>
-                        <input type="time" class="form-control" name="fin" id="exampleInputConfirmPassword1" placeholder="9:30">
+                        <input type="time" class="form-control" name="fin" id="exampleInputConfirmPassword1" placeholder="9:30" required>
                       </div>
                     </div>
   

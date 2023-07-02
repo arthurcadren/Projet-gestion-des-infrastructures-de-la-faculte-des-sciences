@@ -16,8 +16,32 @@
                   
                   <p class="card-description">
                     Queries <code>Received</code>
+                  <div class="row g-3 align-items-center mt-2">
+                    <div class="col-auto">
+                      <form action="/EGeneral" method="GET">
+                       <input type="search" name="search" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                
+                        @foreach($data as $row)
+                        <input type="text" name="input2consult" value="{{ $row->nomSalle }}" hidden>
+                        @endforeach
+                        <input type="submit"class="form-control" aria-describedby="passwordHelpInline" hidden>
+                      </form> 
+
+                      <div class="col-auto">
+                        <form action="/exportpdf" method="get">
+                          <div class="col-auto">
+                              <input type="text" name="input2consult" value="{{ $row->nomSalle }}" hidden>
+                              <input type="text" name="input3consult" value="{{ $row->evenement }}" hidden>
+                              <button class="btn btn-info">Export PDF</button>
+                          </div>
+                        </form>
+                      </div>
+                      </div>
+
+                      
 
 
+                  </div>
                     @if($message= Session::get('success'))
                         <div class="message">
                             {{$message}}
@@ -65,9 +89,6 @@
             
           </div>
         </div>
-
-
-
 
 
 

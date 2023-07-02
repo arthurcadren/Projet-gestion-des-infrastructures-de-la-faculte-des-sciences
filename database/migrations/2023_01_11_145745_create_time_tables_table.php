@@ -22,7 +22,7 @@ class CreateTimeTablesTable extends Migration
             $table->string('nomevent');/*--------------------------*/
             $table->enum('filiere',['ICT4D','Informatique','Mathematique','Physique','Aucune']);/*----------------------------*/
             $table->enum('niveau',['L1','L2','L3','M1','M2','D1','D2','Administratif','Aucun']);/*----------------------------*/
-            $table->enum('Date',['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi']);/*----------------------------*/
+            $table->enum('Date',['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche']);/*------------------------------*/
             $table->time('tempsdebut');/*----------------------------*/
             $table->time('tempsfin');/*----------------------------*/
             $table->string('nomSalle');

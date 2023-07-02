@@ -11,7 +11,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card" style="width: 800px;">
                 <div class="card-body ml-2" style="width: 800px;">
-                  <h4 class="card-title">Liste des Vehicules</h4>
+                  <h4 class="card-title">List of vehicles</h4>
                   <p class="card-description">
                     Queries <code>Received</code>
                     
@@ -28,10 +28,10 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Num plaque</th>
-                          <th>Modele</th>
+                          <th>plate number</th>
+                          <th>Model</th>
                           <!-- <th>Couleur</th> -->
-                          <th>Marque</th>
+                          <th>Brand</th>
                           <!-- <th>Annee</th> -->
                           <th>photo</th>
                           <!-- <th>Action</th> -->

@@ -11,7 +11,7 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card" style="width: 800px;">
                 <div class="card-body ml-2" style="width: 800px;">
-                  <h4 class="card-title">Liste des Terrain</h4>
+                  <h4 class="card-title">List of fields</h4>
                   <p class="card-description">
                     Queries <code>Received</code>
 
@@ -28,9 +28,9 @@
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>identifiant</th>
+                          <th>identifier</th>
                           <th>type</th>
-                          <th>dimension</th>
+                          <th>size</th>
                           <!-- <th>Emplacement</th> -->
                           <th>photo</th>
                           

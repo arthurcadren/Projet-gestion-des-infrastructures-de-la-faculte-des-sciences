@@ -2,7 +2,18 @@
 
 
   @section('content')
-
+ <!-- 
+    text de 
+  -->
+  <div class="form-group">
+    <input type="text" class="form-control form-control-lg" name="name" id="exampleInputEmail1" value="{{ $user->name }}" required hidden/>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control form-control-lg" name="matricule" id="exampleInputPassword1" value="{{ $user->matricule }}" required hidden/>
+  </div>
+   <!-- 
+    text de 
+  -->
   <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -10,7 +21,7 @@
               <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
                  
-                  <h3 class="font-weight-bold">Welcome {{$user->name}}</h3>
+                  <h3 class="font-weight-bold">Welcome <b>"{{$user->name}}"</b></h3>
                  
                   <h6 class="font-weight-normal mb-0">All systems are running easily! <span class="text-primary"></span></h6><!-- smoothly You have  3 unread alerts!-->
                 </div>

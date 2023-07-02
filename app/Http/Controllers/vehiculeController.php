@@ -110,7 +110,7 @@ class vehiculeController extends Controller
             $reservation->save();
            // return redirect()->route('validReservation')->with('success','voiture retire avec succes');
 
-            //return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
+            return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
         }
 
 
@@ -141,6 +141,8 @@ class vehiculeController extends Controller
 
             }
             $reservation->delete();
+            return redirect()->route('validReservation')->with('success','Connection instable ou erreur du service d\'envoie veuillez verifier votre connexion ou reessayer plutard');
+
 
              // Supprime la réservation
             //return redirect()->route('RUDvehicule')->with('success','voiture retirée avec succès');
@@ -181,6 +183,17 @@ class vehiculeController extends Controller
             return view('disponibilite',compact('data'));
         }
 
+        public function reserveVtest()
+        {
+            $vehicules = vehicule::all();
+            return view('car',compact('vehicules'));
+        }
+
+        public function infoVsingle($numplaque)//$numplaque
+        {
+            $data=vehicule::where('numero_plaque',$numplaque)->first();
+            return view('car-single',compact('data'));//,compact('data')
+        }
         
 }
 

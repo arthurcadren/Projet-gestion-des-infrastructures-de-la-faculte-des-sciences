@@ -191,17 +191,16 @@ Route::get('/app',[AdminController::class,'app'])->name('app');
 
 
 
+Route::get('/reserveVtest',[vehiculeController::class,'reserveVtest'])->name('reserveVtest');
+Route::get('/infoVsingle/{numplaque}',[vehiculeController::class,'infoVsingle'])->name('infoVsingle');
+
+Route::get('/reserveTtest',[TerrainController::class,'reserveTtest'])->name('reserveTtest');
+Route::get('/infoTsingle/{phototerrain}',[TerrainController::class,'infoTsingle'])->name('infoTsingle');
 
 
-
-
-
-
-
-
-
-
-
+/*--------------------------------------export au format pdf--------------------------------------------*/
+Route::get('/exportpdf',[AdminController::class,'exportpdf'])->name('exportpdf');
+/*--------------------------------------export au format pdf--------------------------------------------*/
 
 
 
@@ -214,6 +213,13 @@ Route::middleware(['auth:sanctum'])->group(function(){
     Route::get('me',[UserController::class,'me']);
 
 });*/
+
+
+
+
+
+
+
 
 Route::get('mike',function(){
     return new GarageResourceCollection(Garage::get());

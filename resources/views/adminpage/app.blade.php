@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -296,12 +297,15 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            
-            <a class="nav-link" href="#">
+          <form class="menu-title" action="{{route('AdminConnect')}}" method="post">
+          @csrf
+            <!-- <a class="nav-link" href=""> -->
               <i class="icon-grid menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-            
+              <!--<button class="menu-title">--><span class="menu-title"></span><!--</button>-->
+            <!-- </a>  -->
+          
+          </form>
+
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -386,7 +390,7 @@
               </ul>
               <div class="collapse" id="icons">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="{{route('listeTAdmin')}}">List Terrain</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="{{route('listeTAdmin')}}">Terrain List</a></li>
                 </ul>
               </div>
             </div>
@@ -484,7 +488,7 @@
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  Premium <a href="https://www.uy1.cm/" target="_blank">Universite de Yaounde 1</a> from ICT4D. All rights reserved.</span>
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023.  Premium <a href="https://www.uy1.cm/" target="_blank">University of Yaounde 1</a> from ICT4D. All rights reserved.</span>
             <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
           </div>
         </footer>

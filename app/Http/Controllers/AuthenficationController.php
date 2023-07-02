@@ -75,6 +75,7 @@ class AuthenficationController extends Controller
             $use->matricule = $request->matricule;
             $use->email = $request->email;
             $use->save();
+            return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
             //return redirect()->route('validReservation')->with('success','voiture retire avec succes');
             //return redirect()->back()->withSuccess('Demande de reservation effectuer avec succes !');
         }

@@ -43,7 +43,7 @@ class ClasseController extends Controller
         else {
             $data=Salle::paginate(5);
         }
-        return view('listeCAdmin',compact('data'));//test
+        return view('adminpage/listeCAdmin',compact('data'));//test
         
     }
     public function page2()
@@ -98,10 +98,10 @@ class ClasseController extends Controller
     {
         // $data=Salle::find($nomSalle);
         // $data->delete();
-        $data=Salle::where('nomSalle',$nomSalle);
-        $data->delete();
+        $salles=Salle::where('nomSalle',$nomSalle);
+        $salles->delete();
 
-        return redirect()->route('test')->with('success','suppression effectue avec succes');
+        return redirect()->route('listeCAdmin')->with('success','suppression effectue avec succes');//remplacer par [test] en cas de ndem
     }
 
     public function insertevenement(Request $request)
@@ -190,14 +190,14 @@ class ClasseController extends Controller
 
     public function RUD(Request $request)
     {
-        if ($request->has('search')) {
-            $data=TimeTable::where('nomevent','LIKE','%'.$request->search.'%')->paginate(5);
-        }
+        //if ($request->has('search')) {
+            $data=TimeTable::where('nomevent','LIKE','%'.$request->search.'%');//->paginate(5);
+        /*}
         else {
             $data=TimeTable::paginate(5);
-        }
+        }*/
         // $data=TimeTable::all();
-        return view('RUD',compact('data'));
+        return view('adminpage/EGeneral',compact('data'));
     }
     public function updateevent($nomevent)
     {
@@ -278,9 +278,38 @@ class ClasseController extends Controller
             return view('sallevide',compact('data'));
     }
 
+
+    public function getAvailableHours($Date) {
+        $data = TimeTable::where('Date', $Date)->pluck('hour');
+        $data = array();
+        
+        // Loop through each hour between 7h00 and 20h00
+        for ($hour = 7; $hour <= 20; $hour++) {
+           // Check if the hour is occupied
+           if (!$data->contains($hour)) {
+              $data[] = $hour;
+           }
+        }
+        
+        //return $availableHours;
+        return view('adminpage/EmptyClass',compact('data'));
+     }
     
     
-    
+    /* public function getAvailableHours($day) {
+   $occupiedHours = Reservation::where('day', $day)->pluck('hour');
+   $availableHours = array();
+   
+   // Loop through each hour between 7h00 and 20h00
+   for ($hour = 7; $hour <= 20; $hour++) {
+      // Check if the hour is occupied
+      if (!$occupiedHours->contains($hour)) {
+         $availableHours[] = $hour;
+      }
+   }
+   
+   return $availableHours;
+} */
 
 
 

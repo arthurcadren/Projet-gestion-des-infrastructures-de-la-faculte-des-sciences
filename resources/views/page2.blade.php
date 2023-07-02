@@ -9,9 +9,9 @@
     <title>Document</title>
 </head>
 <body id="page2">
-    <nav class="navbar">
+     <!-- <nav class="navbar">
         <a href="#" class="logo">
-        <!-- <img src="images/logo.png" title="class" class="imgTerrain"> -->
+        
          <img src="images/logo.png" title="class" class="imgTerrain">
         </a>
 
@@ -23,7 +23,7 @@
                 <a href="#"><button class="bookbtn">BookNow<button><a>
             </ul>
         </div>
-    </nav>
+    </nav>  -->
 
             @if(isset($_COOKIE['notif']))
                 <p>{{ $_COOKIE['notif'] }}</p>
@@ -166,7 +166,7 @@
 
 
 
-    <!-- <section class="creerEvent" id="creerEvent">
+    <section class="creerEvent" id="creerEvent">
         <span class="titreEvent">Create Event</span>
         <span class="soulEvent"></span>
 
@@ -224,7 +224,7 @@
                 <input type="time" name="fin" placeholder="Start Time" class="finevent" required>
                 <input type="submit" value="Create" class="bouttonevent">
             </form>
-    </section> -->
+    </section>
 
 
 
