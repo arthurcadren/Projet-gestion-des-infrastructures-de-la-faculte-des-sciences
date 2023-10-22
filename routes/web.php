@@ -54,6 +54,9 @@ Route::post('/updateeventvrai/{nomevent}',[ClasseController::class,'updateeventv
 Route::get('/sallevide',[ClasseController::class,'showvide'])->name('showvide');
 
 Route::get('/deleteevent/{nomevent}/{Date}/{tempsdebut}/{tempsfin}',[ClasseController::class,'deleteevent'])->name('deleteevent');
+/* delete event admin */
+Route::get('/deleteeventadmin/{nomevent}/{Date}/{tempsdebut}/{tempsfin}',[ClasseController::class,'deleteeventadmin'])->name('deleteeventadmin');
+/* delete event admin */
 
 /*-------------------------------------------------------------------------------------*/
 

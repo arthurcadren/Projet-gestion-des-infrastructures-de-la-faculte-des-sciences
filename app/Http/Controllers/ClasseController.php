@@ -246,6 +246,20 @@ class ClasseController extends Controller
         return redirect()->route('RUD')->with('success', 'Suppression de l\'evenement avec succès');
     }
 
+    public function deleteeventadmin($nomevent,$Date,$tempsdebut,$tempsfin) 
+    {
+        $data=TimeTable::where('nomevent', $nomevent)
+                         ->where('Date', $Date)
+                         ->where('tempsdebut', $tempsdebut)
+                         ->where('tempsfin', $tempsfin)
+                         ->delete();
+                         return back()->with('success','evenement supprime avec succes');
+            //return redirect('adminpage/EGeneral')->with('success','evenement supprime avec succes!');
+              // return redirect()->route('EGeneral')->with('success', 'Suppression de l\'evenement avec succès');
+
+              // return redirect()->route('EGeneral');/*->with('success', 'Suppression de l\'evenement avec succès');*/
+    }
+
     /*---------------------------- affiche emploie de temps salles--------------------------------------------*/
 
     /*public function show(Request $request)

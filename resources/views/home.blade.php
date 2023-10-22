@@ -141,7 +141,7 @@
                </div>
                <div class="carousel-item">
                   <div class="container">
-                     <h1 class="banner_taital">We<br>Make Your<br>Dream Home</h1>
+                     <h1 class="banner_taital">Welcome to<br>Campus Infrastructure<br>Manager</h1>
                      <div class="btn_main">
                         <div class="more_bt"><a href="{{route('contact')}}">Contact us</a></div>
                         <div class="contact_bt active"><a href="{{route('services')}}">book now</a></div>
@@ -150,7 +150,7 @@
                </div>
                <div class="carousel-item">
                   <div class="container">
-                     <h1 class="banner_taital">With<br>the best<br>Resources </h1>
+                     <h1 class="banner_taital">Welcome to<br>Campus Infrastructure<br>Manager </h1>
                      <div class="btn_main">
                         <div class="more_bt"><a href="{{route('contact')}}">Contact us</a></div>
                         <div class="contact_bt active"><a href="{{route('services')}}">book Now</a></div>
@@ -182,7 +182,7 @@
                   </div>
                </div>
                <div class="col-md-6">
-                  <div class="about_img"><img src="images/rec.png"></div>
+                  <div class="about_img"><img src="images/rec.jpg"></div>
                </div>
             </div>
          </div>

@@ -142,6 +142,7 @@ class AdminController extends Controller
         }else {
             $data = TimeTable::where('evenement','=',''.$request->input3consult.'')
         ->where('nomSalle','=',''.$request->input2consult.'')
+        ->orderBy('Date','asc')
         ->get();
         }
         return view('adminpage/EGeneral',compact('data'));
@@ -247,6 +248,7 @@ class AdminController extends Controller
         {
             $data = TimeTable::where('evenement','=',$request->input3consult)
                 ->where('nomSalle','=',$request->input2consult)
+                ->orderBy('Date','asc')
                 ->get();
 
             $pdf = \PDF::loadView('adminpage.EGeneral-pdf', compact('data'));

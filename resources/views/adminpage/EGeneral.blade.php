@@ -75,7 +75,7 @@
                           <td>{{$row->niveau}}</td>
 
 
-                          <td><a href="{{route('deleteevent',['Date'=>$row->Date,'nomevent'=>$row->nomevent,'tempsdebut'=>$row->tempsdebut,'tempsfin'=>$row->tempsfin]) }}"><label class="badge badge-danger">Delete</label></a></td>
+                          <td><a href="{{route('deleteeventadmin',['Date'=>$row->Date,'nomevent'=>$row->nomevent,'tempsdebut'=>$row->tempsdebut,'tempsfin'=>$row->tempsfin]) }}"><label class="badge badge-danger">Delete</label></a></td>
                           <td><a href="{{route('updateevent',['nomevent'=>$row->nomevent])}}"><label class="badge badge-success">Update</label></a></td>
                         </tr>
                         @endforeach
